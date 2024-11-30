@@ -101,26 +101,30 @@
             <button type="submit" class="login-button" id="loginButton">Entrar</button>
         </form>
         <div class="footer">
-            <p>&copy; 2024 Samsung. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Nova Era Tecnology. Todos os direitos reservados.</p>
         </div>
     </div>
 
     <script>
-        const loginForm = document.getElementById('loginForm');
+       const loginForm = document.getElementById('loginForm');
 
-        loginForm.addEventListener('submit', function(event) {
-            event.preventDefault();
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-            if (username && password) {
-                alert(`Bem-vindo, ${username}!`);
-                // Aqui você pode adicionar lógica para autenticar o usuário
-            } else {
-                alert('Por favor, preencha todos os campos.');
-            }
-        });
+    if (username == "admin" && password == "admin") {
+        alert(`Bem-vindo, ${username}!`);
+        
+        // Redirecionamento após login bem-sucedido
+        window.location.href = 'https://www.google.com'; // Altere para a URL de destino desejada
+
+    } else {
+        alert('Por favor, preencha todos os campos ou verifique suas credenciais.');
+    }
+});
+
     </script>
 </body>
 </html>
