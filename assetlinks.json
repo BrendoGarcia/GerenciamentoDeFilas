@@ -2,10 +2,10 @@
   {
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-      "namespace": "android_app",
+      "namespace": "Gestão;",
       "package_name": "com.seudominio.app",
       "sha256_cert_fingerprints": [
-        "FINGERPRINT_DO_CERTIFICADO_DIGITAL_DO_APK"
+        "6C:AA:8A:61:14:E0:46:5C:DD:D5:6A:D7:F1:18:85:0C:1B:2A:8E:D1:32:5D:DB:61:5A:2D:A2:CD:9C:2D:C4:92"
       ]
     }
   }
